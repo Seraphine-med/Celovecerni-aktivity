@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Celovečerní aktivity</title>
+</head>
+<body>
+
+<script>
+    var eventConfig = document.createElement('script');
+    eventConfig.src = "config.js?t=" + Date.now();
+    document.head.appendChild(eventConfig);
+</script>
+<script>
+    eventConfig.onload = function(){
+        if (ACTIVE_EVENT !== "template-akce") {
+            window.location.href = `akce/${ACTIVE_EVENT}/index.html`;
+        }
+    };
+</script>
+
+</body>
+</html>
