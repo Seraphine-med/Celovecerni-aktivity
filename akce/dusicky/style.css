@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    /* 🖼️ SEM VLOŽ SVŮJ OBRÁZEK NA POZADÍ */
+    background-image: url("");
+    background-color: #14071f;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    font-family: serif;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: clamp(28px, 5vw, 52px);
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(15, 15, 15, 0.8);
+
+    /* 🎨 Tlumený zlato-fialový obrys */
+    border: 1px solid rgba(255, 200, 130, 0.25);
+
+    padding: 30px;
+    border-radius: 15px;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    backdrop-filter: blur(4px);
+}
+
+.card:hover {
+    /* 🎨 Teplý svíčkový hover */
+    background: linear-gradient(
+        135deg,
+        rgba(255, 200, 130, 0.85),
+        rgba(150, 100, 190, 0.75)
+    );
+    color: #2b1b3a;
+    box-shadow:
+        0 0 15px rgba(255, 200, 130, 0.5),
+        0 0 35px rgba(150, 100, 190, 0.35),
+        0 0 60px rgba(255, 170, 90, 0.2);
+    border-color: rgba(255, 220, 170, 0.9);
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* 📱 Mobil */
+@media (max-width: 768px) {
+    body {
+        background-position: 50% 30%;
+        padding: 20px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        width: 100%;
+    }
+    .card {
+        width: 85%;
+        max-width: 340px;
+        font-size: 18px;
+        padding: 22px;
+    }
+    h1 {
+        font-size: clamp(22px, 6vw, 32px);
+        margin-bottom: 25px;
+    }
+}
