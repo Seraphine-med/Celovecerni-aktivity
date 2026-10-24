@@ -1,5 +1,5 @@
 // Aktivní akce pro návštěvníky webu
-const ACTIVE_EVENT = "lockhart";
+const ACTIVE_EVENT = "hallowee";
 
 // Dostupné akce:
 // template-akce
