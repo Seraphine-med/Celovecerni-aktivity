@@ -5,7 +5,6 @@ html, body {
 }
 
 body {
-    /* 🖼️ SEM VLOŽ SVŮJ OBRÁZEK NA POZADÍ */
     background-image: url("https://1url.cz/@hallbackground");
     background-color: #14071f;
     background-size: cover;
@@ -16,7 +15,6 @@ body {
     font-family: serif;
     text-align: center;
     min-height: 100vh;
-    margin: 0;
 
     display: flex;
     flex-direction: column;
@@ -37,31 +35,51 @@ h1 {
 }
 
 .card {
+    display: block;
+    box-sizing: border-box;
     background: rgba(15, 15, 15, 0.8);
-
-    /* 🎨 Oranžovo-černý obrys */
     border: 1px solid rgba(255, 140, 40, 0.3);
 
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px;
-    width: 200px;
+    width: 240px;
+
     cursor: pointer;
     transition: all 0.35s ease;
     backdrop-filter: blur(4px);
+
+    color: white;
+    text-decoration: none;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.card span {
+    display: block;
+    font-size: 18px;
 }
 
 .card:hover {
-    /* 🎨 Oranžovo-černý hover */
     background: linear-gradient(
         135deg,
         rgba(255, 138, 43, 0.85),
         rgba(60, 20, 90, 0.85)
     );
+
     color: #1a0b0b;
+
     box-shadow:
         0 0 15px rgba(255, 138, 43, 0.6),
         0 0 35px rgba(180, 60, 200, 0.35),
         0 0 60px rgba(255, 100, 20, 0.25);
+
     border-color: rgba(255, 170, 90, 0.9);
     transform: translateY(-5px) scale(1.05);
 }
@@ -72,18 +90,25 @@ h1 {
         background-position: 50% 30%;
         padding: 20px;
     }
+
     .container {
         flex-direction: column;
         align-items: center;
         gap: 18px;
         width: 100%;
     }
+
     .card {
         width: 85%;
         max-width: 340px;
         font-size: 18px;
         padding: 22px;
     }
+
+    .card img {
+        height: 180px;
+    }
+
     h1 {
         font-size: clamp(22px, 6vw, 32px);
         margin-bottom: 25px;
