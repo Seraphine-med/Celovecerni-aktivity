@@ -5,15 +5,18 @@ html, body {
 }
 
 body {
+    background-image: url("images/halloweenbackground.png");
     background-color: #14071f;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     color: white;
     font-family: serif;
     text-align: center;
-
     min-height: 100vh;
-    padding: 50px 30px;
-    box-sizing: border-box;
+    margin: 0;
 
     display: flex;
     flex-direction: column;
