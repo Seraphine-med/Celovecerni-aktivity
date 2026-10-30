@@ -5,24 +5,27 @@ html, body {
 }
 
 body {
-    /* 🖼️ SEM VLOŽ SVŮJ OBRÁZEK NA POZADÍ */
-    background-image: url("https://1url.cz/@backgrounddusicky");
+    /* 🖼️ POZADÍ AKCE */
+    background-image: url("images/dusickybackground.png");
     background-color: #14071f;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
     color: white;
     font-family: serif;
     text-align: center;
+
     min-height: 100vh;
-    margin: 0;
+    padding: 30px 20px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 h1 {
     font-size: clamp(28px, 5vw, 52px);
