@@ -3,30 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🕯️ Dušičkový večer</title>
+
+<!-- NÁZEV AKCE -->
+<title>Dušičky</title>
+
 <link rel="stylesheet" id="eventStyle" href="">
 <script>
     document.getElementById('eventStyle').href =
         "style.css?t=" + Date.now();
 </script>
 </head>
+
 <body>
 
+<!-- NADPIS STRÁNKY -->
 <h1>Vyber si celovečerní soutěž</h1>
 
 <div class="container">
 
-    <div class="card" onclick="window.open('https://1url.cz/@nocniobloha', '_blank')">
-        ✨<br> Noční obloha
-    </div>
+    <!-- KARTIČKA 1 -->
+    <a class="card" href="images/nocniobloha.png" target="_blank" rel="noopener">
+        <span>✨</span>
+        Noční obloha
+    </a>
 
-    <div class="card" onclick="window.open('https://1url.cz/@poselstvisvicek', '_blank')">
-        🕯️<br> Poselství svíček
-    </div>
+    <!-- KARTIČKA 2 -->
+    <a class="card" href="images/poselstvisvicek.png" target="_blank" rel="noopener">
+        <span>🕯️</span>
+        Poselství svíček
+    </a>
 
-    <div class="card" onclick="window.open('https://1url.cz/@rozdilyvenec', '_blank')">
-        🥀<br> Kouzelný věnec
-    </div>
+    <!-- KARTIČKA 3 -->
+    <a class="card" href="images/dusickovyvenec.png" target="_blank" rel="noopener">
+        <span>🥀</span>
+        Dušičkový věnec
+    </a>
 
 </div>
 
