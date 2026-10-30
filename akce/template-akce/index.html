@@ -1,32 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Večer s Gilderoyem Lockhartem</title>
+
+<!-- NÁZEV AKCE -->
+<title>Název akce</title>
+
 <link rel="stylesheet" id="eventStyle" href="">
 <script>
     document.getElementById('eventStyle').href =
         "style.css?t=" + Date.now();
 </script>
 </head>
+
 <body>
 
+<!-- NADPIS STRÁNKY -->
 <h1>Vyber si celovečerní soutěž</h1>
 
 <div class="container">
 
-    <div class="card" onclick="window.open('#', '_blank')">
-        🪞<br> Název soutěže 1
-    </div>
+    <!-- KARTIČKA 1 -->
+    <a class="card" href="images/obrazek1.png" target="_blank" rel="noopener">
+        <span>🪞</span>
+        Název soutěže 1
+    </a>
 
-    <div class="card" onclick="window.open('#', '_blank')">
-        🖋️<br> Název soutěže 2
-    </div>
+    <!-- KARTIČKA 2 -->
+    <a class="card" href="images/obrazek2.png" target="_blank" rel="noopener">
+        <span>🖋️</span>
+        Název soutěže 2
+    </a>
 
-    <div class="card" onclick="window.open('#', '_blank')">
-        📸<br> Název soutěže 3
-    </div>
+    <!-- KARTIČKA 3 -->
+    <a class="card" href="images/obrazek3.png" target="_blank" rel="noopener">
+        <span>📸</span>
+        Název soutěže 3
+    </a>
 
 </div>
 
