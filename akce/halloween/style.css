@@ -1,20 +1,19 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
-    background-image: url("https://1url.cz/@hallbackground");
     background-color: #14071f;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
     color: white;
     font-family: serif;
     text-align: center;
+
     min-height: 100vh;
+    padding: 50px 30px;
+    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
@@ -30,87 +29,73 @@ h1 {
 .container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    gap: 60px;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .card {
-    display: block;
     box-sizing: border-box;
-    background: rgba(15, 15, 15, 0.8);
-    border: 1px solid rgba(255, 140, 40, 0.3);
 
-    padding: 20px;
-    border-radius: 15px;
-    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 30%;
+    min-width: 280px;
+    min-height: 210px;
+
+    background: rgba(15, 15, 15, 0.85);
+    border: 2px solid rgba(160, 125, 75, 0.4);
+    border-radius: 30px;
+
+    color: white;
+    font-family: serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: none;
 
     cursor: pointer;
     transition: all 0.35s ease;
-    backdrop-filter: blur(4px);
-
-    color: white;
-    text-decoration: none;
-}
-
-.card img {
-    display: block;
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 12px;
 }
 
 .card span {
-    display: block;
-    font-size: 18px;
+    font-size: 38px;
 }
 
 .card:hover {
-    background: linear-gradient(
-        135deg,
-        rgba(255, 138, 43, 0.85),
-        rgba(60, 20, 90, 0.85)
-    );
+    background: rgba(35, 25, 40, 0.95);
+    border-color: rgba(190, 150, 95, 0.8);
 
-    color: #1a0b0b;
+    box-shadow: 0 0 25px rgba(160, 125, 75, 0.2);
 
-    box-shadow:
-        0 0 15px rgba(255, 138, 43, 0.6),
-        0 0 35px rgba(180, 60, 200, 0.35),
-        0 0 60px rgba(255, 100, 20, 0.25);
-
-    border-color: rgba(255, 170, 90, 0.9);
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-5px);
 }
 
 /* 📱 Mobil */
+
 @media (max-width: 768px) {
     body {
-        background-position: 50% 30%;
-        padding: 20px;
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
     }
 
     .container {
         flex-direction: column;
-        align-items: center;
-        gap: 18px;
-        width: 100%;
+        gap: 20px;
     }
 
     .card {
-        width: 85%;
+        width: 100%;
         max-width: 340px;
-        font-size: 18px;
-        padding: 22px;
-    }
-
-    .card img {
-        height: 180px;
-    }
-
-    h1 {
-        font-size: clamp(22px, 6vw, 32px);
-        margin-bottom: 25px;
+        min-height: 170px;
+        font-size: 25px;
     }
 }
